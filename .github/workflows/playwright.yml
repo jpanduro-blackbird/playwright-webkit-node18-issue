@@ -6,7 +6,7 @@ on:
     branches: [ main, master ]
 jobs:
   test:
-    runs-on: ['self-hosted', ubuntu, runner-fleet]
+    runs-on: ubuntu-latest
     # container:
     #   image: jpan123/jpand123:node-18
     timeout-minutes: 60
