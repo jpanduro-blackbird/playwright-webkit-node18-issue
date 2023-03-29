@@ -8,7 +8,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     container:
-      image: jpan123/jpand123:node-18
+      image: jpan123/jpan123:node-18
     timeout-minutes: 60
     steps:
     - uses: actions/checkout@v3
