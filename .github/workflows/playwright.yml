@@ -6,16 +6,16 @@ on:
     branches: [ main, master ]
 jobs:
   test:
-    runs-on: ['self-hosted', ubuntu, runner-fleet]
-    # container:
-    #   image: jpan123/jpand123:node-18
+    runs-on: ubuntu-latest
+    container:
+      image: jpan123/jpan123:node-18
     timeout-minutes: 60
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 16
-    - name: Install dependencies
+    # - uses: actions/setup-node@v3
+    #   with:
+    #     node-version: 16
+    - name: Install dependencies!!23
       run: npm ci
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
